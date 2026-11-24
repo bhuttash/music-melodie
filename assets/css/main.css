@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	align-items: center;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2306,6 +2307,16 @@ input, select, textarea {
 		background-repeat: no-repeat, repeat;
 	}
 
+	@media screen and (max-width: 480px) {
+		#one {
+			background: url("../../images/melodie2.jpg");
+			background-size: 60%;
+			background-attachment: fixed;
+			background-position: 50% 90%;
+			background-repeat: no-repeat;
+		}
+	}
+
 /* Two */
 
 	#two {
@@ -2314,6 +2325,16 @@ input, select, textarea {
 		background-attachment: fixed, fixed;
 		background-position: 75%, top left ;
 		background-repeat: no-repeat, no-repeat;
+	}
+
+	@media screen and (max-width: 480px) {
+		#two {
+			background: url("../../images/melodie.jpg"), url("../../images/musicalstaffonpurplebackgroundpic.jpg");
+			background-size: 60%, cover;
+			background-attachment: fixed, fixed;
+			background-position: 50% 90%, top left;
+			background-repeat: no-repeat, no-repeat;
+		}
 	}
 
 /* Contact */
