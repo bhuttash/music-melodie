@@ -1431,17 +1431,46 @@ input, select, textarea {
 		width: 45em;
 		max-width: 100%;
 		margin: 0 auto 2em auto;
+		justify-content: center;
 	}
 
 		.gallery p {
 			margin: 50px 0 50px 0;
 		}
 
+		.gallery .content.style2 {
+				-moz-transition: -moz-transform 2s ease;
+				-webkit-transition: -webkit-transform 2s ease;
+				-ms-transition: -ms-transform 2s ease;
+				transition: transform 2s ease;
+				-moz-transform: translateZ(0);
+				-webkit-transform: translateZ(0);
+				-ms-transform: translateZ(0);
+				transform: translateZ(0);
+				position: relative;
+				width: 80%;
+				margin: 0;
+			}
+		
+		.gallery.inactive .content.style2.left {
+			-moz-transform: translateX(-56em);
+			-webkit-transform: translateX(-56em);
+			-ms-transform: translateX(-56em);
+			transform: translateX(-56em);
+		}
+
+		.gallery.inactive .content.style2.right {
+			-moz-transform: translateX(56em);
+			-webkit-transform: translateX(56em);
+			-ms-transform: translateX(56em);
+			transform: translateX(56em);
+		}
+
 		.gallery article {
-			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
-			transition: transform 1s ease, opacity 1s ease;
+			-moz-transition: -moz-transform 1.5s ease, opacity 1.5s ease;
+			-webkit-transition: -webkit-transform 1.5s ease, opacity 1.5s ease;
+			-ms-transition: -ms-transform 1.5s ease, opacity 1.5s ease;
+			transition: transform 1.5s ease, opacity 1.5s ease;
 			-moz-transform: translateX(0);
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
@@ -2270,8 +2299,8 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("../../images/melodie.jpeg"), url("images/overlay.png");
-		/* background-size: 256px 256px, cover; */
+		background: url("../../images/melodie2.jpg"), url("images/overlay.png");
+		background-size: 25%, cover;
 		background-attachment: fixed, fixed;
 		background-position: 25%, top left;
 		background-repeat: no-repeat, repeat;
@@ -2280,7 +2309,7 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("../../images/melodie2.jpeg"), url("../../images/musicalstaffonpurplebackgroundpic.jpg");
+		background: url("../../images/melodie.jpg"), url("../../images/musicalstaffonpurplebackgroundpic.jpg");
 		background-size: auto, cover;
 		background-attachment: fixed, fixed;
 		background-position: 75%, top left ;
